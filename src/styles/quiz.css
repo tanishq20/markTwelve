@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Roboto:wght@100&display=swap");
+
+body {
+  font-family: "Comfortaa", cursive;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+nav {
+  background-color: #004068;
+  padding: 1rem;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.container {
+  border-radius: 10px;
+  background: #004068;
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin: 20px;
+  color: #fff;
+}
+
+p {
+  padding: 5px;
+  margin: 10px;
+  color: white;
+}
+
+label {
+  display: block;
+  margin: auto;
+  padding: 5px;
+  color: white;
+}
+
+input {
+  margin: 10px;
+}
+
+.btn-res {
+  display: grid;
+  place-items: center;
+}
+
+#calc-btn {
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid yellow;
+  background-color: wheat;
+  color: #004068;
+  cursor: pointer;
+  margin: 0.75rem 0;
+  display: grid;
+  place-items: center;
+}
+
+#calc-btn:hover {
+  background-color: #004068;
+  color: white;
+  font-weight: 700;
+}
+
+.output {
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+}
