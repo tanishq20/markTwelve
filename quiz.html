@@ -1,200 +1,155 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Fun With Triangle</title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./src/styles/quiz.css" />
-  </head>
 
-  <body>
-    <nav>
-      <ul>
-        <li>
-          <a href="./index.html">Is triangle?</a>
-        </li>
-        <li><a href="./quiz.html" style="font-weight: 800;">Quiz</a></li>
-        <li><a href="./calc-area.html">Triangle Area</a></li>
-        <li><a href="./calc-hypo.html">Hypotenuse</a></li>
-      </ul>
-    </nav>
-    <div class="container">
-      <h1 class="header">Triangle Quiz</h1>
-      <form class="quiz-form">
-        <div class="question-container">
-          <p>
-            1. What is the third angle for the triangle where angle1 = 45° and
-            angle2 = 45°?
-          </p>
-          <label><input type="radio" name="que-one" value="45°" />45°</label>
-          <label><input type="radio" name="que-one" value="90°" />90°</label>
-          <label><input type="radio" name="que-one" value="60°" />60°</label>
-          <label><input type="radio" name="que-one" value="50°" />50°</label>
-        </div>
-        <hr />
-        <div class="question-container">
-          <p>
-            2. Which of the following triangles are always similar?
-          </p>
-          <label>
-            <input
-              type="radio"
-              name="que-two"
-              value="Equilateral triangle"
-            />Equilateral triangle
-          </label>
-          <label
-            ><input
-              type="radio"
-              name="que-two"
-              value="Isosceles triangle"
-            />Isosceles triangle</label
-          >
-          <label
-            ><input
-              type="radio"
-              name="que-two"
-              value="Scalene Triangle"
-            />Scalene Triangle</label
-          >
-          <label
-            ><input type="radio" name="que-two" value="Right Triangle" />Right
-            Triangle</label
-          >
-        </div>
-        <hr />
-        <div class="question-container">
-          <p>
-            3. There is a right triangle PQR where: angle Q = 90°; angle P =
-            angle R. What is the measure of angles P and R?
-          </p>
-          <label><input type="radio" name="que-three" value="85°" />85°</label>
-          <label><input type="radio" name="que-three" value="65°" />65°</label>
-          <label><input type="radio" name="que-three" value="45°" />45°</label>
-          <label><input type="radio" name="que-three" value="60°" />60°</label>
-        </div>
-        <hr />
-        <div class="question-container">
-          <p>
-            4. A triangle can have
-          </p>
-          <label
-            ><input type="radio" name="que-four" value="One Right Angle" />One
-            Right Angle</label
-          >
-          <label
-            ><input type="radio" name="que-four" value="Two 45° Angle" />Two 45°
-            Angle</label
-          >
-          <label
-            ><input
-              type="radio"
-              name="que-four"
-              value="One 90° and Two 45° Angle"
-            />One 90° and Two 45° Angle</label
-          >
-          <label
-            ><input type="radio" name="que-four" value="All of these" />All of
-            these</label
-          >
-        </div>
-        <hr />
-        <div class="question-container">
-          <p>
-            5. The perimeter of scalene triangle with sides a, b, c is
-          </p>
-          <label
-            ><input type="radio" name="que-five" value="a + b + c" />a + b +
-            c</label
-          >
-          <label><input type="radio" name="que-five" value="2a" />2a</label>
-          <label><input type="radio" name="que-five" value="2b" />2b</label>
-          <label><input type="radio" name="que-five" value="b" />b</label>
-        </div>
-        <hr />
-        <div class="question-container">
-          <p>
-            6. What is the third angle for the triangle where angle1 = 45° and
-            angle2 = 45°?
-          </p>
-          <label
-            ><input type="radio" name="que-six" value="Obtuse" />Obtuse</label
-          >
-          <label
-            ><input type="radio" name="que-six" value="Acute" />Acute</label
-          >
-          <label
-            ><input type="radio" name="que-six" value="Right angle" />Right
-            angle</label
-          >
-          <label
-            ><input type="radio" name="que-six" value="Reflex angle" />Reflex
-            angle</label
-          >
-        </div>
-        <hr />
-        <div class="question-container">
-          <p>
-            7. A triangle having at least two equal sides.
-          </p>
-          <label
-            ><input type="radio" name="que-seven" value="Acute triangle" />Acute
-            triangle</label
-          >
-          <label
-            ><input
-              type="radio"
-              name="que-seven"
-              value="Isosceles triangle"
-            />Isosceles triangle</label
-          >
-          <label
-            ><input
-              type="radio"
-              name="que-seven"
-              value="Equilateral triangle"
-            />Equilateral triangle</label
-          >
-          <label
-            ><input
-              type="radio"
-              name="que-seven"
-              value="Obtuse triangle"
-            />Obtuse triangle</label
-          >
-        </div>
-        <hr />
-        <div class="question-container">
-          <p>
-            8. The sum of the measures of all three sides of a triangle.
-          </p>
-          <label
-            ><input type="radio" name="que-eight" value="Area" />Area</label
-          >
-          <label
-            ><input
-              type="radio"
-              name="que-eight"
-              value="Perimeter"
-            />Perimeter</label
-          >
-          <label
-            ><input
-              type="radio"
-              name="que-eight"
-              value="Diameter"
-            />Diameter</label
-          >
-          <label
-            ><input type="radio" name="que-eight" value="Radius" />Radius</label
-          >
-        </div>
-      </form>
-      <div class="btn-res">
-        <button id="calc-btn">Show Result</button>
-        <h2 class="output"></h2>
+<head>
+  <title>Fun With Triangle</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./src/styles/quiz.css" />
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li>
+        <a href="./index.html">Is triangle?</a>
+      </li>
+      <li><a href="./quiz.html" style="font-weight: 800;">Quiz</a></li>
+      <li><a href="./calc-area.html">Triangle Area</a></li>
+      <li><a href="./calc-hypo.html">Hypotenuse</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h1 class="header">Triangle Quiz</h1>
+    <form class="quiz-form">
+      <div class="question-container">
+        <p>
+          1. What is the third angle for the triangle where angle1 = 45° and
+          angle2 = 45°?
+        </p>
+        <label><input type="radio" name="que-one" value="45°" />45°</label>
+        <label><input type="radio" name="que-one" value="90°" />90°</label>
+        <label><input type="radio" name="que-one" value="60°" />60°</label>
+        <label><input type="radio" name="que-one" value="50°" />50°</label>
       </div>
+      <hr />
+      <div class="question-container">
+        <p>
+          2. Which of the following triangles are always similar?
+        </p>
+        <label>
+          <input type="radio" name="que-two" value="Equilateral triangle" />Equilateral triangle
+        </label>
+        <label><input type="radio" name="que-two" value="Isosceles triangle" />Isosceles triangle</label>
+        <label><input type="radio" name="que-two" value="Scalene Triangle" />Scalene Triangle</label>
+        <label><input type="radio" name="que-two" value="Right Triangle" />Right
+          Triangle</label>
+      </div>
+      <hr />
+      <div class="question-container">
+        <p>
+          3. There is a right triangle PQR where: angle Q = 90°; angle P =
+          angle R. What is the measure of angles P and R?
+        </p>
+        <label><input type="radio" name="que-three" value="85°" />85°</label>
+        <label><input type="radio" name="que-three" value="65°" />65°</label>
+        <label><input type="radio" name="que-three" value="45°" />45°</label>
+        <label><input type="radio" name="que-three" value="60°" />60°</label>
+      </div>
+      <hr />
+      <div class="question-container">
+        <p>
+          4. A triangle can have
+        </p>
+        <label><input type="radio" name="que-four" value="One Right Angle" />One
+          Right Angle</label>
+        <label><input type="radio" name="que-four" value="Two 45° Angle" />Two 45°
+          Angle</label>
+        <label><input type="radio" name="que-four" value="One 90° and Two 45° Angle" />One 90° and Two 45° Angle</label>
+        <label><input type="radio" name="que-four" value="All of these" />All of
+          these</label>
+      </div>
+      <hr />
+      <div class="question-container">
+        <p>
+          5. The perimeter of scalene triangle with sides a, b, c is
+        </p>
+        <label><input type="radio" name="que-five" value="a + b + c" />a + b +
+          c</label>
+        <label><input type="radio" name="que-five" value="2a" />2a</label>
+        <label><input type="radio" name="que-five" value="2b" />2b</label>
+        <label><input type="radio" name="que-five" value="b" />b</label>
+      </div>
+      <hr />
+      <div class="question-container">
+        <p>
+          6. What is the third angle for the triangle where angle1 = 45° and
+          angle2 = 45°?
+        </p>
+        <label><input type="radio" name="que-six" value="Obtuse" />Obtuse</label>
+        <label><input type="radio" name="que-six" value="Acute" />Acute</label>
+        <label><input type="radio" name="que-six" value="Right angle" />Right
+          angle</label>
+        <label><input type="radio" name="que-six" value="Reflex angle" />Reflex
+          angle</label>
+      </div>
+      <hr />
+      <div class="question-container">
+        <p>
+          7. A triangle having at least two equal sides.
+        </p>
+        <label><input type="radio" name="que-seven" value="Acute triangle" />Acute
+          triangle</label>
+        <label><input type="radio" name="que-seven" value="Isosceles triangle" />Isosceles triangle</label>
+        <label><input type="radio" name="que-seven" value="Equilateral triangle" />Equilateral triangle</label>
+        <label><input type="radio" name="que-seven" value="Obtuse triangle" />Obtuse triangle</label>
+      </div>
+      <hr />
+      <div class="question-container">
+        <p>
+          8. The sum of the measures of all three sides of a triangle.
+        </p>
+        <label><input type="radio" name="que-eight" value="Area" />Area</label>
+        <label><input type="radio" name="que-eight" value="Perimeter" />Perimeter</label>
+        <label><input type="radio" name="que-eight" value="Diameter" />Diameter</label>
+        <label><input type="radio" name="que-eight" value="Radius" />Radius</label>
+      </div>
+    </form>
+    <div class="btn-res">
+      <button id="calc-btn">Show Result</button>
+      <h2 class="output"></h2>
     </div>
+  </div>
 
-    <script src="src/scripts/quiz.js"></script>
-  </body>
+  <!-- footer section start -->
+  <footer>
+    <span>Created By <a href="#">Tanishq Kumar</a> | &copy; 2021</span>
+    <br>
+    <div class="social-buttons" style="background: none; padding: 0px;">
+      <a href="https://github.com/tanishq20" target="blank" class="social-margin">
+        <div class="social-icon github">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </div>
+      </a>
+      <a href="https://www.linkedin.com/in/tanishq-kumar-b03a52194/" class="social-margin" target="blank">
+        <div class="social-icon linkedin">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </div>
+      </a>
+      <a href="https://twitter.com/tanishqkumar_20" target="_blank" class="social-margin">
+        <div class="social-icon twitter">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/tanishq_kumar20/" target="blank" class="social-margin">
+        <div class="social-icon instagram">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </div>
+      </a>
+    </div>
+  </footer>
+
+  <script src="src/scripts/quiz.js"></script>
+</body>
+
 </html>
