@@ -8,7 +8,15 @@ calcBtn.addEventListener('click', () => {
     Number(angles[1].value),
     Number(angles[2].value)
   )
-  checkIsTriangle(sum)
+  if (
+    Number(angles[0].value) > 0 &&
+    Number(angles[1].value) > 0 &&
+    Number(angles[2].value) > 0
+  ) {
+    checkIsTriangle(sum)
+  } else {
+    showMessage('Angles must be greater than 0😪', 'orange')
+  }
 })
 
 function sumOfAngles(angleOne, angleTwo, angleThree) {
