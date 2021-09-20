@@ -1,19 +1,22 @@
-const sideOne = document.querySelector('#side-one')
-const sideTwo = document.querySelector('#side-two')
+const sides = document.querySelectorAll('.sides')
 const showBtn = document.querySelector('#calc-btn')
 const output = document.querySelector('#output')
 
 showBtn.addEventListener('click', clickHandler)
 
 function clickHandler() {
-  const sideOneLength = Math.pow(Number(sideOne.value), 2)
-  const sideTwoLength = Math.pow(Number(sideTwo.value), 2)
-  const totalLength = sideOneLength + sideTwoLength
-  let sqrtOfTotalLength = Math.sqrt(totalLength)
-  if (sideOneLength === 0 || sideTwoLength === 0) {
-    showMessage('Please fill all the fileds with positive value🙁', 'red')
+  const sideOneLength = Number(sides[0].value)
+  const sideTwoLength = Number(sides[1].value)
+  if (sideOneLength > 0 && sideTwoLength > 0) {
+    let sqrtOfTotalLength = Math.sqrt(
+      sideOneLength * sideOneLength + sideTwoLength * sideTwoLength
+    )
+    showMessage(
+      `The length of hypotenuse is ${sqrtOfTotalLength.toFixed(2)}`,
+      'orange'
+    )
   } else {
-    showMessage(`The length of hypotenuse is ${sqrtOfTotalLength}`, 'orange')
+    showMessage('Please fill all the fileds with positive value🙁', 'red')
   }
 }
 
