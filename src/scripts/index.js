@@ -15,7 +15,7 @@ calcBtn.addEventListener('click', () => {
   ) {
     checkIsTriangle(sum)
   } else {
-    showMessage('Angles must be greater than 0😪', 'orange')
+    showMessage('All Angles must be greater than 0😪', 'orange')
   }
 })
 
